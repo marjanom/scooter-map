@@ -1,0 +1,102 @@
+/* General styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    /* Adjusts padding to ensure space on the sides */
+    padding: 0 15px;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+}
+
+/* Main container adjustments */
+.main {
+    padding: 20px;
+    /* Better spacing on the top and bottom, consistent with the lateral margins */
+}
+
+.container {
+    padding: 15px;
+    margin: 30px auto; /* Auto side margins to center content */
+    max-width: 96%; /* Limits max width, ensuring some space on the sides */
+}
+
+/* Styles for the map container */
+#mapid {
+    width: 100%;
+    /* Base height adjusted in media queries for responsiveness */
+}
+
+
+.navbar-collapse {
+    display: none;
+  }
+  
+ 
+  .navbar-collapse.show {
+    display: block;
+  }
+/* Responsive settings */
+@media (min-width: 1920px) {
+    body {
+        font-size: 18px;
+    }
+
+    #mapid {
+        height: 500px; /* Increased height for larger resolutions */
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    body {
+        font-size: 16px;
+    }
+
+    #mapid {
+        height: 450px; /* Adjusted height for medium-large resolutions */
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1439px) {
+    body {
+        font-size: 14px;
+    }
+
+    #mapid {
+        height: 400px; /* Default height for smaller resolutions */
+    }
+    
+    .navbar-brand, .nav-link {
+        font-size: 14px; /* Ensures readability on smaller devices */
+    }
+    
+    header {
+        padding: 0 10px; /* Adjusts header padding for better visual spacing on smaller screens */
+    }
+    
+    .container {
+        padding: 0 10px; /* Adjusts container padding for better edge spacing on smaller screens */
+    }
+}
+
+/* Adjustments for very small devices */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 0 10px; /* Reduces padding for very small screens */
+    }
+    
+    header, .container {
+        padding: 0 10px; /* Adjusts padding for narrower screens to ensure space on the sides */
+    }
+}
+
+
+
